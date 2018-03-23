@@ -18,10 +18,19 @@ module.exports = {
       }
     ]
   },
+
+  mode: 'development',
+
   plugins: [
     new HtmlWebpackPlugin({
       title: 'axios async walkthru',
-      template: 'index.html',
+      template: 'index.html'
     })
   ],
+
+  devtool: 'eval-source-map',
+
+  performance: {
+    hints: false,
+  },
 };
